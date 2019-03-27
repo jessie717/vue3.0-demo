@@ -10,11 +10,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },
-    {
-      path: '/toast',
-      name: 'toast',
-      component: () => import(/* webpackChunkName: "about" */ './views/Toast.vue')
     }
+    // {
+    //   path: '/toast',
+    //   name: 'toast',
+    //   component: () => import(/* webpackChunkName: "about" */ './views/Toast.vue')
+    // }
   ]
 })

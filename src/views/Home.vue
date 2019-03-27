@@ -1,10 +1,11 @@
 <template>
   <div class="home">
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
-    <div class="loading"></div>
-    <div class="nav"></div>
+    <!-- <div class="loading"></div> -->
     <div class="container">
-      <div class="c-screen"></div>
+      <div class="c-screen">
+        <img src="../assets/wallpaper.png" alt="谷">
+      </div>
       <div class="c-article"></div>
       <div class="c-page"></div>
     </div>
@@ -16,20 +17,28 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  // components: {
-  //   HelloWorld
-  // }
+  components: {
+    // Cover
+  }
 })
 export default class Home extends Vue {}
 </script>
 
 <style lang="less" scoped>
-.container{
-  // position: relative;
-  .c-screen{
+.home{
+  width: 1280px;
+  height: 100%;
+  .container{
     width: 100%;
-    height: 100%;
-    background: url('https://isujin.com/wp-content/uploads/2018/11/wallhaven-672007-1.png') no-repeat center;
+    .c-screen{
+      width: 100%;
+      height: 720px;
+      img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 </style>

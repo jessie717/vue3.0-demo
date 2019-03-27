@@ -2,7 +2,7 @@
   <div class="mask">
     <div class="menu">
       <div class="menu-top">
-        <span class="menu-logo"></span>
+        <span class="menu-logo">柠汐</span>
         <span class="menu-icon" v-show='isMenu' @click='handleMenu'></span>
         <span class="menu-icon menu-icon-x" v-show='!isMenu' @click='handleMenu'></span>
       </div>
@@ -14,7 +14,7 @@
         <li><a href="#">Music</a></li>
         <li><a href="#">Life</a></li>
       </ul>
-      <p class="menu-bottom">Designed By Jessie· 2019 © 雷雨</p>
+      <p class="menu-bottom">designed by faceless studio· 2019 © 雷雨</p>
     </div>
   </div>
 </template>
@@ -22,15 +22,8 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
 
-// 引入组件方式
-// @Component({
-//   components: {
-//     HelloWorld
-//   }
-// })
-
 @Component
-export default class Mask extends Vue {
+export default class Cover extends Vue {
   // data
   isMenu: boolean = true
 
@@ -56,16 +49,21 @@ export default class Mask extends Vue {
 
 <style scoped lang="less">
 .mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .97);
   .menu{
     .menu-top{
+      margin: 70px auto 0;
       width: 80%;
-      margin: 0 auto 0;
       display: flex;
       justify-content: space-between;
       .menu-logo{
         display: block;
-        width: 20px;
+        // width: 20px;
         height: 20px;
+        font-size: 20px;
       }
       .menu-icon{
         display: block;
@@ -77,19 +75,19 @@ export default class Mask extends Vue {
         background: url('../assets/close.png') no-repeat center;
       }
     }
-    ul{
-      width: 60%;
-      margin: 160px auto 0;
+    ul.menu-middle{
+      width: 50%;
+      margin: 100px auto 0;
       display: flex;
       justify-content: space-around;
       text-align: center;
       li{
         list-style: none;
-        font-size: 16px;
+        font-size: 20px;
         margin: 10px 10px;
         a{
           text-decoration: none;
-          color: #999;
+          color: #666;
           letter-spacing: 1px;
         }
         a:hover{
