@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Cover></Cover>
+    <Cover v-show="isShowCover"></Cover>
     <router-view/>
   </div>
 </template>
@@ -9,12 +9,31 @@
 import { Component, Vue } from 'vue-property-decorator'
 import Cover from '@/views/Cover.vue'
 
+import {
+  State,
+  Getter,
+  Action,
+  Mutation
+} from 'vuex-class'
+
 @Component({
   components: {
     Cover
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  // @State('isShowCover') stateIsShowCover: any
+  // @Action('showCover') actionShowCover: any
+  // @Mutation('SHOW_COVER') mutationShowCover: any
+  // @Getter('isShowCover') getterIsShowCover: any
+
+  @State isShowCover: any
+  // @Mutation SHOW_COVER: any
+
+  mounted () {
+    console.log(this.isShowCover)
+  }
+}
 
 </script>
 

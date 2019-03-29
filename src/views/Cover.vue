@@ -25,9 +25,21 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
+import {
+  State,
+  Getter,
+  Action,
+  Mutation
+} from 'vuex-class'
 
 @Component
 export default class Cover extends Vue {
+  @State isShowCover: any
+  @Action showCover: any
+  // @Action('showCover') actionShowCover: any
+  // @Mutation('SHOW_COVER') mutationShowCover: any
+  // @Getter('isShowCover') getterIsShowCover: any
+
   // data
   isMenu: boolean = true
 
@@ -47,6 +59,9 @@ export default class Cover extends Vue {
   // methods
   handleMenu ():void{
     this.isMenu = !this.isMenu
+    this.showCover(false)
+    console.log('1111111')
+    console.log('isShowCover', this.isShowCover)
   }
 }
 </script>
