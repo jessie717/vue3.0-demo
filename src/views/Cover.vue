@@ -1,12 +1,16 @@
 <template>
   <div class="mask">
     <div class="menu">
-      <div class="menu-top">
+      <div class="menu-name">
         <span class="menu-logo">柠汐</span>
-        <span class="menu-icon" v-show='isMenu' @click='handleMenu'></span>
-        <span class="menu-icon menu-icon-x" v-show='!isMenu' @click='handleMenu'></span>
+        <div class="menu-icon" v-show='isMenu' @click='handleMenu'>
+          <img src="../assets/menu.png" alt="menu">
+        </div>
+        <div class="menu-icon" v-show='!isMenu' @click='handleMenu'>
+          <img src="../assets/close.png" alt="close">
+        </div>
       </div>
-      <ul class="menu-middle">
+      <ul class="menu-list">
         <li><a href="#">Contact</a></li>
         <li><a href="#">Links</a></li>
         <li><a href="#">Archive</a></li>
@@ -14,8 +18,8 @@
         <li><a href="#">Music</a></li>
         <li><a href="#">Life</a></li>
       </ul>
-      <p class="menu-bottom">designed by faceless studio· 2019 © 雷雨</p>
     </div>
+    <div class="info">designed by faceless studio· 2019 © 雷雨</div>
   </div>
 </template>
 
@@ -54,30 +58,33 @@ export default class Cover extends Vue {
   height: 100%;
   background: rgba(255, 255, 255, .97);
   .menu{
-    .menu-top{
-      margin: 70px auto 0;
-      width: 80%;
+    width: 80%;
+    margin: 70px auto 0;
+    .menu-name{
       display: flex;
       justify-content: space-between;
       .menu-logo{
         display: block;
-        // width: 20px;
-        height: 20px;
+        height: 40px;
         font-size: 20px;
+        line-height: 40px;
       }
       .menu-icon{
-        display: block;
-        width: 20px;
-        height: 20px;
-        background: url('../assets/menu.png') no-repeat center;
-      }
-      .menu-icon-x{
-        background: url('../assets/close.png') no-repeat center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        img{
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin: 10px 10px;
+        }
       }
     }
-    ul.menu-middle{
-      width: 50%;
+    .menu-list{
       margin: 100px auto 0;
+      width: 60%;
       display: flex;
       justify-content: space-around;
       text-align: center;
@@ -95,7 +102,8 @@ export default class Cover extends Vue {
         }
       }
     }
-    p{
+  }
+  .info{
       width: 100%;
       color: #999;
       font-size: 14px;
@@ -103,6 +111,5 @@ export default class Cover extends Vue {
       position: absolute;
       bottom: 30px;
     }
-  }
 }
 </style>
