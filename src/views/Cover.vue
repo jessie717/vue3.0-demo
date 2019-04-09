@@ -1,15 +1,6 @@
 <template>
   <div class="mask">
     <div class="menu">
-      <div class="menu-name">
-        <span class="menu-logo">柠汐</span>
-        <div class="menu-icon" v-show='isMenu' @click='handleMenu'>
-          <img src="../assets/menu.png" alt="menu">
-        </div>
-        <div class="menu-icon" v-show='!isMenu' @click='handleMenu'>
-          <img src="../assets/close.png" alt="close">
-        </div>
-      </div>
       <ul class="menu-list">
         <li><a href="#">Contact</a></li>
         <li><a href="#">Links</a></li>
@@ -75,30 +66,8 @@ export default class Cover extends Vue {
   .menu{
     width: 80%;
     margin: 70px auto 0;
-    .menu-name{
-      display: flex;
-      justify-content: space-between;
-      .menu-logo{
-        display: block;
-        height: 40px;
-        font-size: 20px;
-        line-height: 40px;
-      }
-      .menu-icon{
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        background: #fff;
-        img{
-          display: block;
-          width: 20px;
-          height: 20px;
-          margin: 10px 10px;
-        }
-      }
-    }
     .menu-list{
-      margin: 100px auto 0;
+      margin: 170px auto 0;
       width: 60%;
       display: flex;
       justify-content: space-around;

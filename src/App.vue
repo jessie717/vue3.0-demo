@@ -1,13 +1,17 @@
 <template>
   <div id="app">
+    <BaseMenu></BaseMenu>
     <Cover v-show="isShowCover"></Cover>
     <router-view/>
+    <BaseWish></BaseWish>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Cover from '@/views/Cover.vue'
+import BaseMenu from '@/components/BaseMenu.vue'
+import BaseWish from '@/components/BaseWish.vue'
 
 import {
   State,
@@ -18,17 +22,11 @@ import {
 
 @Component({
   components: {
-    Cover
+    Cover, BaseMenu, BaseWish
   }
 })
 export default class App extends Vue {
-  // @State('isShowCover') stateIsShowCover: any
-  // @Action('showCover') actionShowCover: any
-  // @Mutation('SHOW_COVER') mutationShowCover: any
-  // @Getter('isShowCover') getterIsShowCover: any
-
   @State isShowCover: any
-  // @Mutation SHOW_COVER: any
 
   mounted () {
     console.log(this.isShowCover)
