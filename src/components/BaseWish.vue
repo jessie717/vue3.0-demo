@@ -1,8 +1,7 @@
 <template>
   <div class="wish">
     <p></p>
-    <span>做一个俗人,贪财好色,不染烟酒</span>
-    <span>做一个俗人,浪荡一生,干净自由</span>
+    <span>做一个俗人,贪财好色,不染烟酒,浪荡一生,干净自由</span>
   </div>
 </template>
 

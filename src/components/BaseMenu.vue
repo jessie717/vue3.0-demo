@@ -19,9 +19,9 @@ import { State, Action } from 'vuex-class'
 @Component
 export default class BaseMenu extends Vue {
   // state
-  @State isShowCover: any
+  // @State showNav: any
   @State isMenuLogoWhite: any
-  @Action showCover: any
+  @Action showNav: any
   @Action setMenuLogo: any
 
   // data
@@ -35,7 +35,7 @@ export default class BaseMenu extends Vue {
   // methods
   handleMenu ():void {
     this.isMenu = !this.isMenu
-    this.showCover(!this.isMenu)
+    this.showNav(!this.isMenu)
     this.setMenuLogo(this.isMenu)
   }
 }
@@ -60,7 +60,8 @@ export default class BaseMenu extends Vue {
         line-height: 40px;
       }
       .menu-logo-white{
-        color: #03716E;
+        // color: #03716E;
+        color: #fff;
       }
       .menu-icon{
         cursor: pointer;
