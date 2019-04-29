@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class Cover extends Vue {}
@@ -14,10 +14,10 @@ export default class Cover extends Vue {}
   z-index: 800;
   width: 300px;
   height: 0;
-  opacity: 0.5;
+  opacity: .7;
   position: absolute;
   top: 0;
-  border-bottom: 810px solid #C85C62;
-  border-right: 700px solid transparent;
+  border-bottom: 810px solid rgb(176, 14, 36);
+  border-right: 650px solid transparent;
 }
 </style>

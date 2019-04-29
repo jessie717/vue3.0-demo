@@ -7,6 +7,7 @@
       <div class="c-article"></div>
       <div class="c-page"></div>
     </div>
+    <List></List>
     <Cover></Cover>
   </div>
 </template>
@@ -16,10 +17,11 @@
 import { Component, Vue } from "vue-property-decorator"
 
 import Cover from '@/views/Cover.vue'
+import List from '@/views/List.vue'
 
 @Component({
   components: {
-    Cover
+    Cover, List
   }
 })
 export default class Home extends Vue {}
@@ -34,12 +36,13 @@ export default class Home extends Vue {}
   .container {
     width: 100%;
     .c-screen {
-      width: 100%;
-      // height: 720px;
+      // width: 1440px;
+      // height: 790px;
       img {
         display: block;
         width: 100%;
         height: 100%;
+        // transform: scale(1.1, 1.1);
       }
     }
   }

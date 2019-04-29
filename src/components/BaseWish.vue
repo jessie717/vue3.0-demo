@@ -18,7 +18,7 @@ export default class BaseWish extends Vue {}
   p{
     display: block;
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto 0;
     border-bottom: #999 solid 1px;
   }
   span{
