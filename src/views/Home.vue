@@ -14,7 +14,7 @@
 
 <script lang="ts">
 // @ is an alias to /src
-import { Component, Vue } from "vue-property-decorator"
+import { Component, Vue } from 'vue-property-decorator'
 
 import Cover from '@/views/Cover.vue'
 import List from '@/views/List.vue'

@@ -9,69 +9,84 @@
         <h3><a @click='toArticle'>天下武功,唯快不破</a></h3>
         <p>曾经，我以为自己是个很幽默的人，比如逗女孩开心，讲的是这样的笑话。 一只蚂蚁第一次出门觅食，...</p>
         <div class="list-info-content-total">
-          <span class="letter">1000</span>
-          <span class="view">20000</span>
-          <span class="like">300</span>
+          <span class="letter"><i></i>1000</span>
+          <span class="view"><i></i>20000</span>
+          <span class="like"><i></i>300</span>
         </div>
       </div>
     </div>
     <div class="list-info">
-      <div class="list-info-img">
+      <div class="list-info-img" @click='toArticle'>
         <img src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2017/05/wallhaven-406587.png" alt="">
       </div>
       <div class="list-info-content">
         <span>五月 12, 2018</span>
-        <h3><a>天下武功,唯快不破</a></h3>
+        <h3><a @click='toArticle'>天下武功,唯快不破</a></h3>
         <p>曾经，我以为自己是个很幽默的人，比如逗女孩开心，讲的是这样的笑话。 一只蚂蚁第一次出门觅食，...</p>
         <div class="list-info-content-total">
-          <span class="letter">1000</span>
-          <span class="view">20000</span>
-          <span class="like">300</span>
+          <span class="letter"><i></i>1000</span>
+          <span class="view"><i></i>20000</span>
+          <span class="like"><i></i>300</span>
         </div>
       </div>
     </div>
     <div class="list-info">
-      <div class="list-info-img">
+      <div class="list-info-img" @click='toArticle'>
         <img src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2017/05/wallhaven-406587.png" alt="">
       </div>
       <div class="list-info-content">
         <span>五月 12, 2018</span>
-        <h3><a>天下武功,唯快不破</a></h3>
+        <h3><a @click='toArticle'>天下武功,唯快不破</a></h3>
         <p>曾经，我以为自己是个很幽默的人，比如逗女孩开心，讲的是这样的笑话。 一只蚂蚁第一次出门觅食，...</p>
         <div class="list-info-content-total">
-          <span class="letter">1000</span>
-          <span class="view">20000</span>
-          <span class="like">300</span>
+          <span class="letter"><i></i>1000</span>
+          <span class="view"><i></i>20000</span>
+          <span class="like"><i></i>300</span>
         </div>
       </div>
     </div>
     <div class="list-info">
-      <div class="list-info-img">
+      <div class="list-info-img" @click='toArticle'>
         <img src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2017/05/wallhaven-406587.png" alt="">
       </div>
       <div class="list-info-content">
         <span>五月 12, 2018</span>
-        <h3><a>天下武功,唯快不破</a></h3>
+        <h3><a @click='toArticle'>天下武功,唯快不破</a></h3>
         <p>曾经，我以为自己是个很幽默的人，比如逗女孩开心，讲的是这样的笑话。 一只蚂蚁第一次出门觅食，...</p>
         <div class="list-info-content-total">
-          <span class="letter">1000</span>
-          <span class="view">20000</span>
-          <span class="like">300</span>
+          <span class="letter"><i></i>1000</span>
+          <span class="view"><i></i>20000</span>
+          <span class="like"><i></i>300</span>
         </div>
       </div>
     </div>
     <div class="list-info">
-      <div class="list-info-img">
+      <div class="list-info-img" @click='toArticle'>
         <img src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2017/05/wallhaven-406587.png" alt="">
       </div>
       <div class="list-info-content">
         <span>五月 12, 2018</span>
-        <h3><a>天下武功,唯快不破</a></h3>
+        <h3><a @click='toArticle'>天下武功,唯快不破</a></h3>
         <p>曾经，我以为自己是个很幽默的人，比如逗女孩开心，讲的是这样的笑话。 一只蚂蚁第一次出门觅食，...</p>
         <div class="list-info-content-total">
-          <span class="letter">1000</span>
-          <span class="view">20000</span>
-          <span class="like">300</span>
+          <span class="letter"><i></i>1000</span>
+          <span class="view"><i></i>20000</span>
+          <span class="like"><i></i>300</span>
+        </div>
+      </div>
+    </div>
+    <div class="list-info">
+      <div class="list-info-img" @click='toArticle'>
+        <img src="https://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=https://isujin.com/wp-content/uploads/2017/05/wallhaven-406587.png" alt="">
+      </div>
+      <div class="list-info-content">
+        <span>五月 12, 2018</span>
+        <h3><a @click='toArticle'>天下武功,唯快不破</a></h3>
+        <p>曾经，我以为自己是个很幽默的人，比如逗女孩开心，讲的是这样的笑话。 一只蚂蚁第一次出门觅食，...</p>
+        <div class="list-info-content-total">
+          <span class="letter"><i></i>1000</span>
+          <span class="view"><i></i>20000</span>
+          <span class="like"><i></i>300</span>
         </div>
       </div>
     </div>
@@ -88,7 +103,7 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class List extends Vue {
   // methods
   toArticle ():void{
-    this.$router.push('/aritcle')
+    this.$router.push('/article')
   }
 }
 </script>
@@ -161,19 +176,34 @@ export default class List extends Vue {
           margin: 0 10px 0 0;
         }
         .letter{
-          &::before{
-            content: "\e60c";
+          &>i{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-top: 2px;
+            background: url(../assets/count.png) center no-repeat;
+            background-size: cover;
           }
         }
         .view{
-          &::before{
-            content: "\e60f";
+          &>i{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-top: 2px;
+            background: url(../assets/view.png) center no-repeat;
+            background-size: cover;
           }
         }
         .like{
           margin-right: 0;
-          &::before{
-            content: "\e60a";
+          &>i{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-top: 2px;
+            background: url(../assets/like.png) center no-repeat;
+            background-size: cover;
           }
         }
       }

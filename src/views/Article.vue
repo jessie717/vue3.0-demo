@@ -6,11 +6,14 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import { Action } from 'vuex-class'
 
 @Component
 export default class Article extends Vue {
-  mounted() {
+  @Action showMenu: any
+  mounted () {
     console.log('文章列表页...')
+    this.showMenu(false)
   }
 }
 </script>
@@ -18,4 +21,3 @@ export default class Article extends Vue {
 <style lang="less" scoped>
 
 </style>
-

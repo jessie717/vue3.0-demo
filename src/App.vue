@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <BaseMenu></BaseMenu>
+    <BaseMenu v-show="showMenu"></BaseMenu>
     <Nav v-show="showNav"></Nav>
     <router-view/>
     <BaseWish></BaseWish>
@@ -8,12 +8,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator"
-import { State, Getter, Action, Mutation } from "vuex-class"
+import { Component, Vue } from 'vue-property-decorator'
+import { State, Getter, Action, Mutation } from 'vuex-class'
 
-import Nav from "@/views/Nav.vue"
-import BaseMenu from "@/components/BaseMenu.vue"
-import BaseWish from "@/components/BaseWish.vue"
+import Nav from '@/views/Nav.vue'
+import BaseMenu from '@/components/BaseMenu.vue'
+import BaseWish from '@/components/BaseWish.vue'
 
 @Component({
   components: {
@@ -24,9 +24,10 @@ import BaseWish from "@/components/BaseWish.vue"
 })
 export default class App extends Vue {
   @State showNav: any;
+  @State showMenu: any;
 
-  mounted() {
-    console.log(this.showNav);
+  mounted () {
+    console.log(this.showNav)
   }
 }
 </script>
